@@ -6,18 +6,7 @@ var numericChar= "1234567890";
 var specialChar= "~!@#$%^&*()_+";
 
 // Questions for the user to answer
-
-/*  REWROTE MY PROMPT/CONFIRM BECAUSE MY THIS CODE WAS NOT WORKING
-function userInput (){
-  var passwordLength = prompt("How many characters would you like your password to contain?");
-  var specChar = confirm("Click 'Ok' to confirm including special characters.");
-  var inclNum = confirm("Click 'Ok' to confirm including numbers.");
-  var inclLower = confirm("Click 'Ok' to confirm including lowercase letters.");
-  var inclUpper = confirm("Click 'Ok' to confirm incuding uppercase letters.");
-}; 
-*/
-
-//THIS DIDNT WORK EITHER
+/* REWROTE MY PROMPT/CONFIRM BECAUSE THIS CODE WAS NOT WORKING
 var userInput = {
   passwordLength: function() {
     prompt("How many characters would you like your password to contain?");
@@ -40,19 +29,23 @@ specChar();
 inclNum ();
 inclLower();
 inclUpper();
+*/
 
+//THIS DIDNT WORK EITHER
+function userInput (){
+  var passwordLength = prompt("How many characters would you like your password to contain?");
+  var specChar = confirm("Click 'Ok' to confirm including special characters.");
+  var inclNum = confirm("Click 'Ok' to confirm including numbers.");
+  var inclLower = confirm("Click 'Ok' to confirm including lowercase letters.");
+  var inclUpper = confirm("Click 'Ok' to confirm incuding uppercase letters.");
+}; 
 
-/*var characters = "" ;
+var characters = "" ;
 if (specChar) {
-
 }
 
-
-//Object to make two values 
- return {length: passwordLength, characters: };
-}; */ 
-
-
+ return {length: passwordLength, characters: specChar};
+}; 
 
 function generatePassword(length,characters) {
   var password = "" ;
